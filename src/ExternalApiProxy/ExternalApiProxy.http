@@ -1,0 +1,6 @@
+@ExternalApiProxy_HostAddress = http://localhost:5072
+
+GET {{ExternalApiProxy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
