@@ -1,6 +1,16 @@
 @ExternalApiProxy_HostAddress = http://localhost:5072
 
-GET {{ExternalApiProxy_HostAddress}}/weatherforecast/
+GET {{ExternalApiProxy_HostAddress}}/api/todos/1
+Accept: application/json
+
+###
+
+GET {{ExternalApiProxy_HostAddress}}/api/posts/1
+Accept: application/json
+
+###
+
+GET {{ExternalApiProxy_HostAddress}}/api/users/1
 Accept: application/json
 
 ###
