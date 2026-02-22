@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ExternalApiProxy/ExternalApiProxy.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ExternalApiProxy.IntegrationTests/ExternalApiProxy.IntegrationTests.csproj" />
+  </Folder>
+</Solution>

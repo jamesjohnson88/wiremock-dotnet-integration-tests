@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.reqnroll.net/reqnroll-config-latest.json",
+  "language": {
+    "feature": "en"
+  },
+  "generator": {
+    "allowDebugGeneratedFiles": false
+  },
+  "runtime": {
+    "missingOrPendingStepsOutcome": "Error"
+  },
+  "trace": {
+    "traceSuccessfulSteps": true,
+    "traceTimings": true,
+    "minTracedDuration": "0:0:0.1"
+  }
+}
