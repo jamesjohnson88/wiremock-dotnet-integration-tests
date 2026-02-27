@@ -21,7 +21,7 @@ public sealed class WireMockHooks(IObjectContainer container)
     [BeforeScenario(Order = 0)]
     public void StartWireMock()
     {
-        var logger = new NUnitWireMockLogger();
+        var logger = new WireMockLogger();
 
         var server = WireMockServer.Start(new WireMockServerSettings
         {
@@ -37,7 +37,7 @@ public sealed class WireMockHooks(IObjectContainer container)
     public void StopWireMock()
     {
         var server = container.Resolve<WireMockServer>();
-        var logger = container.Resolve<NUnitWireMockLogger>();
+        var logger = container.Resolve<WireMockLogger>();
 
         PrintRequestLog(logger);
         PrintRequestSummary(server);
@@ -46,7 +46,7 @@ public sealed class WireMockHooks(IObjectContainer container)
         server.Dispose();
     }
 
-    private static void PrintRequestLog(NUnitWireMockLogger logger)
+    private static void PrintRequestLog(WireMockLogger logger)
     {
         var logs = logger.FlushRequestLogs();
 

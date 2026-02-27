@@ -1,5 +1,4 @@
 using System.Collections.Concurrent;
-using NUnit.Framework;
 using WireMock.Admin.Requests;
 using WireMock.Logging;
 
@@ -15,7 +14,7 @@ namespace ExternalApiProxy.IntegrationTests.Support;
 /// - Exposes <see cref="FlushRequestLogs"/> so the AfterScenario hook can drain
 ///   the queue onto the test thread and write everything to TestContext.Out.
 /// </summary>
-public sealed class NUnitWireMockLogger : IWireMockLogger
+public sealed class WireMockLogger : IWireMockLogger
 {
     private readonly ConcurrentQueue<string> _requestLogs = new();
 
