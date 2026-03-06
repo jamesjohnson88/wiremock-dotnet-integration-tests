@@ -1,6 +1,6 @@
 using System.Net.Http.Json;
 using ExternalApiProxy.Models;
-using FluentAssertions;
+using AwesomeAssertions;
 using Reqnroll;
 using WireMock.RequestBuilders;
 using WireMock.ResponseBuilders;
