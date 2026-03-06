@@ -1,5 +1,5 @@
 using System.Net;
-using FluentAssertions;
+using AwesomeAssertions;
 using Reqnroll;
 
 namespace ExternalApiProxy.IntegrationTests.StepDefinitions;
